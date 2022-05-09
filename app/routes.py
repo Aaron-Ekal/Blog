@@ -105,3 +105,5 @@ def new_post():
         return redirect(url_for('home'))
     return render_template('create_post.html', title='New Pitch', form=form)
 
+
+

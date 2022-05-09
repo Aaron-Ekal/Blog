@@ -1,7 +1,8 @@
 {% extends 'layout.html' %} {% block content %}
-<div class="container">
+
   {% for post in posts %}
-  <article class="media-body">
+  <article class="media content-section">
+    <img src="{{ url_for('static', filename='profile_pics/' + post.author.image_file) }}" class="rounded-circle article-img">
     <div class="media-body">
       <div class="article-metadata">
         <a href="#" class="mr-2">{{ post.author.username }}</a>
@@ -12,5 +13,5 @@
     </div>
   </article>
   {% endfor %}
-</div>
+
 {% endblock content %}
