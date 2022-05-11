@@ -18,7 +18,7 @@ In life, 1 minute can make or break you. How do we make sure that you use your 1
 - Run chmod a+x start.sh
 - Run ./start.sh
 - Easy Peasy😉
-- Alternatively, go [here]()
+- Alternatively, go [here](https://pitch-in-seconds.herokuapp.com/)
 
 ## Known Bugs
 
