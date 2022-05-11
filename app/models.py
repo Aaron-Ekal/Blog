@@ -3,7 +3,7 @@ from itsdangerous import Serializer
 #from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
 from flask import current_app
 from app import db, login_manager, app
-from flask_login import UserMixin
+from flask_login import UserMixin, current_user
 
 
 @login_manager.user_loader
@@ -42,6 +42,8 @@ class Post(db.Model):
     date_posted = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
     content = db.Column(db.Text, nullable=False)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
+    
+    
 
     def __repr__(self):
         return f"Post('{self.title}', '{self.date_posted}')"

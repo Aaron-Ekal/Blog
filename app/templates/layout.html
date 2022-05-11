@@ -28,7 +28,6 @@
       <div class="collapse navbar-collapse" id="navbarToggle">
         <div class="navbar-nav mr-auto">
           <a class="nav-item nav-link" href="{{ url_for('main.home')}}">Home</a>
-          <!-- <a class="nav-item nav-link" href="{{ url_for('main.about')}}">About</a> -->
         </div>
         <!-- Navbar Right Side -->
         <div class="navbar-nav">
@@ -61,15 +60,15 @@
       {% block content %}{% endblock %}
     </div>
     <div class="col-md-4">
-      <div class="content-section">
-        <h3>Sidebar Thought</h3>
-        <p class='text-muted'>Here is food for thought
+      <div class="content-section bg-success">
+        <h3 class="sidebar text-dark">Sidebar Thought</h3>
+        <p class='text-muted-light'>Here is food for thought
           <ul class="list-group">
-            <li class="list-group-item list-group-item-light"><a class="nav-item nav-link" href="{{ url_for('users.register')}}">One minute can open Doors</a></li>
-            <li class="list-group-item list-group-item-light"><a class="nav-item nav-link" href="{{ url_for('main.home')}}">Believe In Yourself</a></li>
-            <li class="list-group-item list-group-item-light"><a class="nav-item nav-link" href="{{ url_for('main.home')}}">60 Seconds Impression</a></li>
-            <li class="list-group-item list-group-item-light"><a class="nav-item nav-link" href="{{ url_for('main.home')}}">Jokes are fun</a></li>
-            <li class="list-group-item list-group-item-light"><a class="nav-item nav-link" href="{{ url_for('main.home')}}">Learn Everyday</a></li>
+            <li class="list-group-item list-group-item-light bg-"><a class="nav-item nav-link" href="{{ url_for('users.register')}}">One minute can open Doors</a></li>
+            <li class="list-group-item list-group-item-light"><a class="nav-item nav-link" href="{{ url_for('users.register')}}">Believe In Yourself</a></li>
+            <li class="list-group-item list-group-item-light"><a class="nav-item nav-link" href="{{ url_for('users.register')}}">60 Seconds Impression</a></li>
+            <li class="list-group-item list-group-item-light"><a class="nav-item nav-link" href="{{ url_for('users.register')}}">Jokes are fun</a></li>
+            <li class="list-group-item list-group-item-light"><a class="nav-item nav-link" href="{{ url_for('users.register')}}">Learn Everyday</a></li>
             <li class="list-group-item list-group-item-light"><a class="nav-item nav-link" href="/login">Connect with the Creator</a></li>
           </ul>
         </p>
