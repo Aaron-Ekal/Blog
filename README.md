@@ -2,7 +2,7 @@
 
 #### Pitches website features quotes that worked for others when creating their first impression in an interview, social gathering or promoting content. Feel free to log on and share yours too!
 
-![Landing page screenshot](./app/static/img/Pitch.png "The Pitch Pitcher")
+![Landing page screenshot](./app/static/img/screenshot.png "The Pitch Pitcher")
 
 #### By **Aaron Ekal, May 2022**
 
