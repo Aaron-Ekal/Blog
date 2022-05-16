@@ -1,5 +1,9 @@
 {% extends "layout.html" %}
 {% block content %}
+<div class="container">
+  {{ data.author }}
+  {{ data.quote }}
+</div>
     {% for post in posts.items %}
         <article class="media content-section">
           <img class="rounded-circle article-img" src="{{ url_for('static', filename='profile_pics/' + post.author.image_file) }}">

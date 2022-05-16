@@ -19,25 +19,25 @@
   </head>
   <body>
     <header class="site-header">
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-expand-md navbar-dark bg-transparent fixed-top">
     <div class="container">
-      <a class="navbar-brand mr-4" href="/"><span class="span text-danger">Pitch in Seconds with our Samples</span> </a>
+      <a class="navbar-brand mr-4" href="/"><h2 class="txt text-dark">Simple <span class="span text-white">Quotes</span></h2> </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarToggle">
+      <div class="collapse navbar-collapse ms-auto fs-5" id="navbarToggle">
         <div class="navbar-nav mr-auto">
-          <a class="nav-item nav-link" href="{{ url_for('main.home')}}">Home</a>
+          <a class="nav-item nav-link text-danger " href="{{ url_for('main.home')}}">Home</a>
         </div>
         <!-- Navbar Right Side -->
         <div class="navbar-nav">
           {% if current_user.is_authenticated %}
-          <a class="nav-item nav-link" href="{{ url_for('posts.new_post')}}">New Post</a>
-          <a class="nav-item nav-link" href="{{ url_for('users.account')}}">Account</a>
-          <a class="nav-item nav-link" href="{{ url_for('users.logout')}}">Logout</a>
+          <a class="nav-item nav-link text-danger" href="{{ url_for('posts.new_post')}}">New Post</a>
+          <a class="nav-item nav-link text-danger" href="{{ url_for('users.account')}}">Account</a>
+          <a class="nav-item nav-link text-danger" href="{{ url_for('users.logout')}}">Logout</a>
           {% else %}
-          <a class="nav-item nav-link" href="{{ url_for('users.login')}}">Login</a>
-          <a class="nav-item nav-link" href="{{ url_for('users.register')}}">Register</a>
+          <a class="nav-item nav-link text-danger" href="{{ url_for('users.login')}}">Login</a>
+          <a class="nav-item nav-link text-danger" href="{{ url_for('users.register')}}">Register</a>
           {% endif %}
         </div>
       </div>
@@ -60,17 +60,16 @@
       {% block content %}{% endblock %}
     </div>
     <div class="col-md-4">
-      <div class="content-section bg-success">
-        <h3 class="sidebar text-dark">Sidebar Thought</h3>
-        <p class='text-muted-light'>Here is food for thought
-          <ul class="list-group">
+      <div class="content-section bg-steel">
+        <h3 class="sidebar text-dark text-center">Random Quotes from the Sidebar</h3>
+          <!-- <ul class="list-group">
             <li class="list-group-item list-group-item-light bg-"><a class="nav-item nav-link" href="{{ url_for('users.register')}}">One minute can open Doors</a></li>
             <li class="list-group-item list-group-item-light"><a class="nav-item nav-link" href="{{ url_for('users.register')}}">Believe In Yourself</a></li>
             <li class="list-group-item list-group-item-light"><a class="nav-item nav-link" href="{{ url_for('users.register')}}">60 Seconds Impression</a></li>
             <li class="list-group-item list-group-item-light"><a class="nav-item nav-link" href="{{ url_for('users.register')}}">Jokes are fun</a></li>
             <li class="list-group-item list-group-item-light"><a class="nav-item nav-link" href="{{ url_for('users.register')}}">Learn Everyday</a></li>
             <li class="list-group-item list-group-item-light"><a class="nav-item nav-link" href="/login">Connect with the Creator</a></li>
-          </ul>`
+          </ul>` -->
         </p>
       </div>
     </div>
