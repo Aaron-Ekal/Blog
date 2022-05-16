@@ -1,44 +1,42 @@
-# Perfect Pitches to get you started
+## Blog
+# Author
+    Aaron Ekal
+## Email
+    ekalaaronkalale@gmail.com
+## Project description
+    This is a flask application that allows writers to post blogs, edit and delete blogs. It also allows users who have signed up to comment on the blogs that has been posted by a writer. 
 
-#### Pitches website features quotes that worked for others when creating their first impression in an interview, social gathering or promoting content. Feel free to log on and share yours too!
+## Live link
+    
+## User story
+    * A user can view the most recent posts.
+    * Register to be allowed to log in to the application
+    * A user sees random quotes on the site
+    * A writer can create a blog from the application and update or delete blogs I have created.
 
-![Landing page screenshot](./app/static/img/screenshot.png "The Pitch Pitcher")
+## Development
+    * Fork the repo
+    * Clone the repo in your machine but ensure you have all the necessary modules.(You can find them in the set up instructions above) git clone https://github.com/Aaron-Ekal/Blog
+    * Create a new branch git branch contributions
+    * Edit your changes in your branch
+    * Run the application python3.8 run.py
+    * Push your changes so we can have a view!
+## BDD
+|Behaviour|Input|Output|
+|---------|-----|------|
+|Load page|On page load|Get all blogs,select between Register and login|
+|select signup|email,username,password|redirect to login|
+|select login|username and password|redirect to page with blogs that have been posted by writers and be able to subscribe to the blog|
+|select nerw post|comment|form that you input your comment|
+|click on submit||redirect to all comments template with your comment and other comments|
 
-#### By **Aaron Ekal, May 2022**
+## Technologies used
+    * Python3.8
+    * Flask
+    * Heroku
+ ## Known bugs
+    updating blog gives an internal server error
 
-## Description
-
-In life, 1 minute can make or break you. How do we make sure that you use your 1 minute to actually say something meaningful? This application helps you do exactly that by getting sampleas from different people. You can add yours!
-
-## Setup/Installation Requirements
-
-- You need a good perfoming computer/laptop: Core i3 or equivalent with high resolution display
-- Clone from Github
-- Open terminal on the cloned folder
-- Run chmod a+x start.sh
-- Run ./start.sh
-- Easy Peasy😉
-- Alternatively, go [here](https://pitch-in-seconds.herokuapp.com/)
-
-## Known Bugs
-
-There are no known bugs currently but I look forward to improving the overall user experience
-
-## Technologies Used
-
-This site was made entirely using:
-
-- HTML
-- CSS
-- Python|Flask|SQLAlchemy
-- PostgreSQL
-- Bootstrap
-
-## Support and contact details
-
-I'd love to chat! Ping me on [Twitter](https://twitter.com/aaronekal) should any issues arise, or just say Hi!
-
-### License
-
-_MIT Licence_
-Copyright &copy; 2022 **Aaron Ekal**
+## License
+    * MIT License
+    * Copyright (c) 2022 aaron Ekal
