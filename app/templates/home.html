@@ -1,9 +1,9 @@
 {% extends "layout.html" %}
 {% block content %}
 <div class="container mb-4 mt-3 text-light fs-4">
-  <h2 align="center" style="color: white;">Random Quote</h2>
+  <h2 align="center" style="color: orangered;">Random Quote</h2>
   {{ data.quote }} <br>
-  <small>By {{ data.author }} </small>
+  <small style="color: orangered;">By {{ data.author }} </small>
 </div>
     {% for post in posts.items %}
         <article class="media content-section">
